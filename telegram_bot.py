@@ -1,11 +1,10 @@
 from aiogram import Bot, Dispatcher, executor, types
 import logging
 
-logging.basicConfig(level=loggin.INFO)
+logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token='1189322913:AAGBfHBa_kJCvZngbUwSvRTTgsi39Nnm5pY')
-dp = Dispatcher
-dispatcher = Dispatcher(bot)
+dp = Dispatcher(bot)
 
 @dp.message_handler()
 async def echo(message: types.Message)
