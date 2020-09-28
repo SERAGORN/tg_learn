@@ -10,7 +10,7 @@ dp = Dispatcher(bot, loop=loop)
 
 @dp.message_handler()
 async def echo(message: types.Message)
-    await message.answer(message.text)
+    await message.answer(text='Hi')
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
